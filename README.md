@@ -111,3 +111,7 @@ Channel test (id 1035716040):
 ```
 
 Here is the trick. Every channel id is a __13 characters negative integer__. So the id for this channel is `-1001035716040` and not `1035716040` as printed.
+
+## Questions?
+
+Talk to me on Telegram Messenger! [@GabrielRF](http://telegram.me/GabrielRF)
