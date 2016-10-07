@@ -3,13 +3,13 @@
 ###### The ultimate guide
 
 * [Telegram Web](#telegram-web)
-  * [User ID](#user-id)
-  * [Group ID](#group-id)
-  * [Channel ID](#channel-id)
+  * [User ID](#web-user-id)
+  * [Group ID](#web-group-id)
+  * [Channel ID](#web-channel-id)
 * [Telegram-CLI](#telegram-cli)
-  * [User ID](#user-id)
-  * [Group ID](#group-id)
-  * [Channel ID](#channel-id)
+  * [User ID](#cli-user-id)
+  * [Group ID](#cli-group-id)
+  * [Channel ID](#cli-channel-id)
 
 ## Telegram Web
 
@@ -17,13 +17,13 @@ Available on https://web.telegram.org
 
 Follow the steps displayed to log in the app.
 
-### User ID
+### Web User ID
 
 It's not possible to find the user ID using this method. So, the easiest way to do it is talking to [@userinfobot](https://telegram.me/userinfobot). If you need to find somebody else's ID, forward a message to the bot.
 
 ###### _This bot is not mine! Use it on your own risk!_
 
-### Group ID
+### Web Group ID
 
 Click on the group you want and see the url displayed on your browser.
 
@@ -42,7 +42,7 @@ https://web.telegram.org/#/im?p=s1041843721_16434430556517118330
 If this is the case, then the group ID is `-1041843721`. It's always a negative integer.
 
 
-### Channel ID
+### Web Channel ID
 
 Click on the channel you want and see the url displayed on your browser.
 
@@ -89,7 +89,7 @@ I: config dir=[/root/.telegram-cli]
 hash: 
 ```
 
-### User ID
+### CLI User ID
 
 To get a user id, ask the user to send any message do the bot and observe it on `Telegram CLI` window.
 
@@ -117,7 +117,7 @@ User Gabriel R F @GabrielRF (#9083329):
 
 There you go! The user id, on this example, is `9083329`.
 
-### Group ID
+### CLI Group ID
 
 Add the bot to the group. On `Telegram CLI`, a message will be printed.
 
@@ -146,7 +146,7 @@ So, the id for the example group is `-148228539`.
 
 Group ids are always a __negative integer__, so remember to add the `-` while using it on the Telegram API.
 
-### Channel ID
+### CLI Channel ID
 
 Finally, to get a channel id, add the bot as a channel `administrator`.
 
