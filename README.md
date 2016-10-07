@@ -39,7 +39,7 @@ For __private super groups__ the url must be like:
 ```
 https://web.telegram.org/#/im?p=s1041843721_16434430556517118330
 ```
-If this is the case, then the group ID is `-1041843721`. It's always a negative integer.
+If this is the case, then the group ID whois be `1041843721`. But it's important to know that __super group IDs__ are always a 13 characters negative integer, so the correct ID is `-1001041843721`.
 
 
 ### Web Channel ID
