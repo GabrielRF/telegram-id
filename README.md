@@ -2,6 +2,7 @@
 
 ###### The ultimate guide
 
+* [Attention](#attention)
 * [Telegram Web](#telegram-web)
   * [User ID](#web-user-id)
   * [Group ID](#web-group-id)
@@ -10,6 +11,14 @@
   * [User ID](#cli-user-id)
   * [Group ID](#cli-group-id)
   * [Channel ID](#cli-channel-id)
+
+---
+
+## Attention
+
+##### This guide aims on bot developers. If you don't develop Telegram Chatbots or don't use Telegram CLI, this guide is not for you. Don't expect to get phone numbers or to join groups by their id. Both are impossible.
+
+---
 
 ## Telegram Web
 
