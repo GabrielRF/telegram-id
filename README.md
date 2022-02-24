@@ -11,6 +11,10 @@
   * [User ID](#cli-user-id)
   * [Group ID](#cli-group-id)
   * [Channel ID](#cli-channel-id)
+* [Telegram-App](#telegram-app)
+  * [User ID](#app-user-id)
+  * [Group ID](#app-group-id)
+  * [Channel ID](#app-channel-id)
 
 ---
 
@@ -22,7 +26,7 @@
 
 ## Telegram Web
 
-Available on https://web.telegram.org
+Available on https://web.telegram.org/?legacy=1#/login (have to use the legacy Telegram web client)
 
 Follow the steps displayed to log in the app.
 
@@ -55,9 +59,9 @@ If this is the case, then the group ID whois be `1041843721`. But it's important
 
 Click on the channel you want and see the url displayed on your browser.
 
-If it's a __public__ group, the ID is `@name` of the group.
+If it's a __public__ channel, the ID is `@name` of the channel.
 
-If it's a __private group__ then the url must be similar to:
+If it's a __private channel__ then the url must be similar to:
 ```
 https://web.telegram.org/#/im?p=c1018013852_555990343349619165
 ```
@@ -173,6 +177,41 @@ Channel test (id 1035716040):
 ```
 
 Here is the trick. Every channel id is a __13 characters negative integer__. So the id for this channel is `-1001035716040` and not `1035716040` as printed.
+
+## Telegram App
+
+You can use the app directly to generate a direct link to the message and it will contain the group/channel information.
+
+### App User ID
+
+It is not possible to get user ID from the app itself. Have to get it from a [bot](#web-user-id) or [CLI](#cli-group-id)
+
+### App Group ID
+
+Tap/click on the group you want and hold/right click on a message. Copy the message link.
+
+If it's a __public__ group, you can simply use it's `@name` as an id.
+
+If it's __private group__, it is not possible to get a link. Have to use [CLI](#cli-group-id) or [Web](#web-group-id) method
+
+For __private super groups__ the link must be like:
+```
+https://t.me/c/1041843721/200
+```
+If this is the case, then the group ID whois be `1041843721`. But it's important to know that __super group IDs__ are always a 13 characters negative integer, so the correct ID is `-1001041843721`.
+
+### App Channel ID
+
+Tap/click on the channel you want and hold/right click on a message. Copy the message link.
+
+If it's a __public__ channel, the ID is `@name` of the group.
+
+If it's a __private channel__ then the url must be similar to:
+```
+https://t.me/c/1018013852/193
+```
+
+If this is the case, then the channel ID would be `1018013852`. It's important to know that channel's IDs are always negative and 13 characters long! So add `-100` to it, making the correct ID `-1001018013852`.
 
 ### Questions?
 
